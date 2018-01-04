@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name                  = 'CTAssetsPickerController'
-  spec.version               = '3.3.2-alpha'
+  spec.version               = '3.3.3-alpha'
   spec.summary               = 'iOS control that allows picking multiple photos and videos from user\'s photo library.'
 
   spec.description           = <<-DESC
@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   spec.source                = { :git => 'https://github.com/chiunam/CTAssetsPickerController.git', :tag => 'v3.3.2-alpha' }
   spec.public_header_files   = 'CTAssetsPickerController/*.h'
   spec.source_files          = 'CTAssetsPickerController/**/*.{h,m}'
-  spec.resource_bundles      = { 'CTAssetsPickerController' => ['CTAssetsPickerController/Resources/CTAssetsPicker.xcassets/*/*.png', 'CTAssetsPickerController/Resources/*.lproj'] }
+  spec.resources    = 'CTAssetsPickerController/CTAssetsPickerController.bundle'
   spec.ios.frameworks        = 'Photos'
   spec.requires_arc          = true
   spec.dependency            'PureLayout', '~> 3.0.0'
