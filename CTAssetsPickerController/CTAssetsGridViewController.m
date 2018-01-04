@@ -85,6 +85,10 @@ NSString * const CTAssetsGridViewFooterIdentifier = @"CTAssetsGridViewFooterIden
         
         self.collectionView.allowsMultipleSelection = YES;
         
+        if (@available(iOS 11.0, *)) {
+            self.collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentAlways;
+        }
+
         [self.collectionView registerClass:CTAssetsGridViewCell.class
                 forCellWithReuseIdentifier:CTAssetsGridViewCellIdentifier];
         
