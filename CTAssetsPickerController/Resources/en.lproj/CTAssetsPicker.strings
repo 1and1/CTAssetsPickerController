@@ -1,6 +1,7 @@
 /* Navigation bar buttons */
 "Cancel" = "Cancel";
 "Done" = "Done";
+"Back" = "Back";
 
 /* Default title */
 "Photos" = "Photos";

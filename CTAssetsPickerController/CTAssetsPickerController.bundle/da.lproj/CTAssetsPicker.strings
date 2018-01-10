@@ -1,6 +1,7 @@
 /* Navigation bar buttons */
 "Cancel" = "Fortryd";
 "Done" = "Færdig";
+"Back" = " ";
 
 /* Default title */
 "Photos" = "Billeder";

@@ -1,6 +1,7 @@
 /* Navigation bar buttons */
 "Cancel" = "إلغاء";
 "Done" = "تم";
+"Back" = " ";
 
 /* Default title */
 "Photos" = "الصور";

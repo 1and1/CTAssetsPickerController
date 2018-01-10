@@ -1,6 +1,7 @@
 /* Navigation bar buttons */
 "Cancel" = "Kumoa";
 "Done" = "Valmis";
+"Back" = " ";
 
 /* Default title */
 "Photos" = "Kuvat";

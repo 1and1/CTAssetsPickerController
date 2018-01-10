@@ -1,6 +1,7 @@
 /* Navigation bar buttons */
 "Cancel" = "Отмена";
 "Done" = "Готово";
+"Back" = " ";
 
 /* Default title */
 "Photos" = "Фотографии";

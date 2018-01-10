@@ -1,6 +1,7 @@
 /* Navigation bar buttons */
 "Cancel" = "रद्द करें";
 "Done" = "पूर्ण हुआ";
+"Back" = " ";
 
 /* Default title */
 "Photos" = "चित्र";

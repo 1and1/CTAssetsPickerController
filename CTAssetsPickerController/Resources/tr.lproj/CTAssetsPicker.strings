@@ -1,6 +1,7 @@
 /* Navigation bar buttons */
 "Cancel" = "Vazgeç";
 "Done" = "Bitti";
+"Back" = " ";
 
 /* Default title */
 "Photos" = "Fotoğraflar";

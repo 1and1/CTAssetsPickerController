@@ -1,6 +1,7 @@
 /* Navigation bar buttons */
 "Cancel" = "Avbryt";
 "Done" = "Klar";
+"Back" = " ";
 
 /* Default title */
 "Photos" = "Foton";

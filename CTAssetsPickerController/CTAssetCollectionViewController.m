@@ -44,6 +44,7 @@
 
 @property (nonatomic, weak) CTAssetsPickerController *picker;
 
+@property (nonatomic, strong) UIBarButtonItem *backButton;
 @property (nonatomic, strong) UIBarButtonItem *cancelButton;
 @property (nonatomic, strong) UIBarButtonItem *doneButton;
 
@@ -165,6 +166,15 @@
                                          style:UIBarButtonItemStylePlain
                                         target:self.picker
                                         action:@selector(dismiss:)];
+    }
+    
+    if (self.backButton == nil)
+    {
+        self.backButton =
+        [[UIBarButtonItem alloc] initWithTitle:CTAssetsPickerLocalizedString(@"Back", nil)
+                                         style:UIBarButtonItemStylePlain
+                                        target:self.picker
+                                        action:nil];
     }
 }
 
@@ -343,6 +353,7 @@
 
 - (void)updateButton:(NSArray *)selectedAssets
 {
+    self.navigationItem.backBarButtonItem = self.backButton;
     self.navigationItem.leftBarButtonItem = (self.picker.showsCancelButton) ? self.cancelButton : nil;
     self.navigationItem.rightBarButtonItem = [self isTopViewController] ? self.doneButton : nil;
     

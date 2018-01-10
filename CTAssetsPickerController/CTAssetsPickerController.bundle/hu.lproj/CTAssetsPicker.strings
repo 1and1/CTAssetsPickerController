@@ -1,6 +1,7 @@
 /* Navigation bar buttons */
 "Cancel" = "Mégsem";
 "Done" = "Kész";
+"Back" = " ";
 
 /* Default title */
 "Photos" = "Fotók";

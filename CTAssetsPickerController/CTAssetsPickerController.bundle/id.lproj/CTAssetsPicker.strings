@@ -1,6 +1,7 @@
 /* Navigation bar buttons */
 "Cancel" = "Batal";
 "Done" = "Selesai";
+"Back" = " ";
 
 /* Default title */
 "Photos" = "Foto";
