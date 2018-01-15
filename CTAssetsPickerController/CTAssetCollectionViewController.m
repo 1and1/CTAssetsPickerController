@@ -257,10 +257,11 @@
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
 {
     [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
-    
+    NSMutableArray *selectedAssets = self.picker.selectedAssets;
+    __weak typeof(self)weakSelf = self;
     [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
-        [self updateTitle:self.picker.selectedAssets];
-        [self updateButton:self.picker.selectedAssets];
+        [weakSelf updateTitle:selectedAssets];
+        [weakSelf updateButton:selectedAssets];
     } completion:nil];
 }
 

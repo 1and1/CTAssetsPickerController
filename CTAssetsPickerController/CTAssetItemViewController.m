@@ -107,9 +107,9 @@
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
 {
     [super viewWillTransitionToSize:size withTransitionCoordinator:coordinator];
-
+    CTAssetScrollView *scrollView = self.scrollView;
     [coordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
-        [self.scrollView updateZoomScalesAndZoom:YES];
+        [scrollView updateZoomScalesAndZoom:YES];
     } completion:nil];
 }
 
