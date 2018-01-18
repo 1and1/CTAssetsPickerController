@@ -347,7 +347,7 @@
 - (void)updateTitle:(NSArray *)selectedAssets
 {
     if ([self isTopViewController] && selectedAssets.count > 0)
-        self.title = self.picker.selectedAssetsString;
+        self.navigationItem.title = self.picker.selectedAssetsString;
     else
         [self resetTitle];
 }
@@ -377,9 +377,9 @@
 - (void)resetTitle
 {
     if (!self.picker.title)
-        self.title = CTAssetsPickerLocalizedString(@"Photos", nil);
+        self.navigationItem.title = CTAssetsPickerLocalizedString(@"Photos", nil);
     else
-        self.title = self.picker.title;
+        self.navigationItem.title = self.picker.navigationItem.title;
 }
 
 
@@ -498,7 +498,7 @@
     PHAssetCollection *collection = self.assetCollections[indexPath.row];
     
     CTAssetsGridViewController *vc = [CTAssetsGridViewController new];
-    vc.title = self.picker.selectedAssetsString ? : collection.localizedTitle;
+    //vc.title = self.picker.selectedAssetsString ? : collection.localizedTitle;
     vc.assetCollection = collection;
     vc.delegate = self;
     
@@ -517,7 +517,7 @@
     if (self.defaultAssetCollection && !self.didShowDefaultAssetCollection)
     {
         CTAssetsGridViewController *vc = [CTAssetsGridViewController new];
-        vc.title = self.picker.selectedAssetsString ? : self.defaultAssetCollection.localizedTitle;
+        //vc.title = self.picker.selectedAssetsString ? : self.defaultAssetCollection.localizedTitle;
         vc.assetCollection = self.defaultAssetCollection;
         vc.delegate = self;
         

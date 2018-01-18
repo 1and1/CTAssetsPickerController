@@ -413,9 +413,9 @@ NSString * const CTAssetsGridViewFooterIdentifier = @"CTAssetsGridViewFooterIden
 - (void)updateTitle:(NSArray *)selectedAssets
 {
     if (selectedAssets.count > 0)
-        self.title = self.picker.selectedAssetsString;
+        self.navigationItem.title = self.picker.selectedAssetsString;
     else
-        self.title = self.assetCollection.localizedTitle;
+        self.navigationItem.title = self.assetCollection.localizedTitle;
 }
 
 - (void)updateButton:(NSArray *)selectedAssets
